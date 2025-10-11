@@ -3,8 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import InterviewCard from "@/components/InterviewCard";
-import { getCurrentUser, getInterviewsByUserId, getLatestInterviews } from "@/lib/actions/auth.action";
-
+import { getInterviewsByUserId, getLatestInterviews } from "@/lib/actions/general.action";
+import { getCurrentUser } from "@/lib/actions/auth.action";
 export default async function Page() {
   const user = await getCurrentUser();
 
